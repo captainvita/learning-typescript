@@ -1,7 +1,6 @@
 // Stop Watch Class the includes data types and methods
 class stopWatch {
   startStop: boolean = false; // True = Start time
-  reset: boolean = false; // True = Reset time
   interval: number = 1000; // Time inerval for setInterval set to 1 sec
   seconds: number = 0;
   minutes: number = 0;
@@ -13,9 +12,8 @@ class stopWatch {
     this.startStop = !this.startStop;
   }
 
-  // Reset time ----------------!!!!!!!!!! LOGIC ISSUES - Reset button doesnt need toggling but only reset of time
-  toggleResetTime(): void {
-    this.reset = !this.reset;
+  // Reset time
+  resetTime(): void {
     this.seconds = 0;
     this.minutes = 0;
     this.hours = 0;

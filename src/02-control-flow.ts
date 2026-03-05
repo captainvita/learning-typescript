@@ -38,6 +38,19 @@ switch (numberB) {
 
 // --- LOOPS --------------------
 
+interface Person {
+  name: string;
+  age: number;
+  location: string;
+  email?: string; // optional variable
+}
+
+let person: Person = {
+  name: "Rebeecca",
+  age: 31,
+  location: "Hannover",
+};
+
 let something = 0;
 let somethingElse = [1, 2, 4, 8];
 let limit = 5;
