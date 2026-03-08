@@ -1,0 +1,41 @@
+// --- JavaScript Object Notation (JSON) --------------------
+{
+  "name": "Hans",
+  "age": 30,
+  "gender": "Male",
+  "address": {
+    "street": {
+      "number": 467,
+      "name": "Main Street"
+    },
+    "city": "Sometown",
+    "zip": "80096"
+  },
+  "hobbies": [
+    "Reading",
+    "Hiking",
+    "Cooking"
+  ]
+}
+
+/*
+Import JSON file into a TypeScript file:
+Import * as config from './config.json';
+
+Generate a Interface that matches the structure and types of the JSON object:
+
+interface Person {
+  name: string;
+  age: number;
+  gender: string;
+  address: {
+    street: {
+      number: number;
+      name: string;
+    };
+    city: string;
+    zip: string;
+  };
+  hobbies: string[];
+}
+*/
