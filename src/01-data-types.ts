@@ -1,7 +1,8 @@
 // --- DATA TYPES --------------------
 
 // Primitive types & constants
-let name: string = "Hans";
+let location = "Hamburg"; // Self infered
+let name: string = "Hans"; // Explicit type
 let age: number = 31;
 let isOnline: boolean = true;
 let randomValue: any;
