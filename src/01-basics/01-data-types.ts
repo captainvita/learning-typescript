@@ -4,12 +4,15 @@
 let location = "Hamburg"; // Self infered
 let name: string = "Hans"; // Explicit type
 let age: number = 31;
+let stringNumber: string = "123";
+const toNumber = parseInt(stringNumber);
 let isOnline: boolean = true;
 let randomValue: any;
 const USER_ID: number = 145853;
 
 // Basic string array
 const fullName: string[] = ["Andre", "Michel"];
+let someNumbers: number[] = [1, 2, 3];
 let hobbies: string[] = ["Jogging", "Gaming", "Making music"];
 let maritalStatus: [string, string, string] = ["single", "married", "divorced"]; // Tuple is a array with fixed amount of elements
 
