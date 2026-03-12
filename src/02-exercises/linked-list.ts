@@ -14,19 +14,19 @@ Doubly Linked List:
 */
 
 interface singleNode<T> {
-    value: T;
-    next: singleNode<T> | null;
+  value: T;
+  next: singleNode<T> | null;
 }
 
 type singlyLinkedList<T> = {
-    head: singleNode<T> | null;
-    size: number;
+  head: singleNode<T> | null;
+  size: number;
+};
+
+function createSingleNode<T>(value: T): singleNode<T> {
+  return { value, next: null };
 }
 
-function createSingleNode<T> (value: T): singleNode<T> {
-    return {value, next: null};
-}
-
-function createSinglyLinkedList<T> (): singlyLinkedList<T> {
-    return {head: null, size: 0};
+function createSinglyLinkedList<T>(): singlyLinkedList<T> {
+  return { head: null, size: 0 };
 }
