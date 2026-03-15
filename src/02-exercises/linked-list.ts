@@ -22,11 +22,3 @@ type singlyLinkedList<T> = {
   head: singleNode<T> | null;
   size: number;
 };
-
-function createSingleNode<T>(value: T): singleNode<T> {
-  return { value, next: null };
-}
-
-function createSinglyLinkedList<T>(): singlyLinkedList<T> {
-  return { head: null, size: 0 };
-}
