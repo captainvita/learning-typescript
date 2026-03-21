@@ -9,7 +9,7 @@ for (let i = 0; i <= MAX_NUMBER; i++) {
 let even: number[] = [];
 let odd: number[] = [];
 
-for (let v of zeroToMax) {
+for (const v of zeroToMax) {
   if (v % 2 === 0) {
     even.push(v);
   } else {
