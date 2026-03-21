@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.red.min.css"
+        />
+        <title>Guess-A-Number</title>
+    </head>
+    <body>
+        <div>
+            <h1 style="color: red">Guess-A-Number</h1>
+            <p>A simple number guessing game.</p>
+            <p>
+                Type in a number between 1 and 100 and see if you guessed right.
+            </p>
+        </div>
+        <div id="form">
+            <label for="guessField">Your Guess: </label>
+            <input
+                type="number"
+                min="1"
+                max="100"
+                required
+                id="input"
+                class="guessField"
+            />
+            <button id="submitInput" type="submit">Submit</button>
+        </div>
+        <div id="resultField">
+            <p>Your previous Guesses: <output id="guessedNumber"></output></p>
+            <h3 id="highOrLow"></h3>
+            <h2 id="gameEnd"></h2>
+        </div>
+        <script src="/src/main.ts"></script>
+    </body>
+</html>
